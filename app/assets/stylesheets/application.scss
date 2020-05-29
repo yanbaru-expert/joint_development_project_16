@@ -12,3 +12,13 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+body {
+  display: block;
+  text-align: left;
+  line-height: 1.5;
+  box-sizing: border-box;
+  padding: 0px 16px;
+  margin: 32px auto;
+  max-width: 700px;
+}
