@@ -1,0 +1,16 @@
+<%= form_with model: @user, local: true do |f| %>
+  <div class="input-group flex-nowrap my-4">
+    <div class="input-group-prepend">
+      <span class="input-group-text">氏名</span>
+    </div>
+      <%= f.text_field :name, class:"form-control" %>
+  </div>
+
+  <div class="input-group flex-nowrap my-4">
+    <div class="input-group-prepend">
+      <span class="input-group-text">年齢</span>
+    </div>
+      <%= f.text_field :age, class:"form-control" %>
+  </div>
+  <%= f.submit "送信", class:"btn btn-primary btn-block"%>
+<% end %>
