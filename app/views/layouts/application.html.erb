@@ -12,12 +12,7 @@
   <body>
     <div class = "base-container">
       <%= render "layouts/header" %>
-        <% flash.each do |msg_type, msg| %>
-          <div class="alert alert-<%= msg_type %>" role="alert">
-            <a href="#" class="close" data-dismiss="alert">×</a>
-            <%= msg %>
-          </div>
-        <% end %>
+      <%= render "layouts/flash" %>
       <%= yield %>
     </div>
   </body>
