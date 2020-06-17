@@ -1,0 +1,6 @@
+<p>更新</p>
+<%= form_with model: @task, local: true do |t| %>
+    <p>タイトル: <%= t.text_field :title %></p>
+    <p>内容: <%= t.text_field :content %></p>
+    <%= t.submit "送信" %>
+<% end %>    
